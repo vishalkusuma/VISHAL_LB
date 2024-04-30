@@ -1,0 +1,114 @@
+
+vishal.kusuma@INHYDL4868 MINGW64 /d/VISHAL_LB
+$ git init
+Initialized empty Git repository in D:/VISHAL_LB/.git/
+
+vishal.kusuma@INHYDL4868 MINGW64 /d/VISHAL_LB (master)
+$ git add "login.txt"
+
+vishal.kusuma@INHYDL4868 MINGW64 /d/VISHAL_LB (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   login.txt
+
+
+vishal.kusuma@INHYDL4868 MINGW64 /d/VISHAL_LB (master)
+$ git commit -m "adding login.txt"
+[master (root-commit) 021c026] adding login.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 login.txt
+
+vishal.kusuma@INHYDL4868 MINGW64 /d/VISHAL_LB (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+vishal.kusuma@INHYDL4868 MINGW64 /d/VISHAL_LB (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   login.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        register.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+vishal.kusuma@INHYDL4868 MINGW64 /d/VISHAL_LB (master)
+$ git add login.txt
+
+vishal.kusuma@INHYDL4868 MINGW64 /d/VISHAL_LB (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   login.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        register.txt
+
+
+vishal.kusuma@INHYDL4868 MINGW64 /d/VISHAL_LB (master)
+$ git add "register.txt"
+
+vishal.kusuma@INHYDL4868 MINGW64 /d/VISHAL_LB (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   login.txt
+        new file:   register.txt
+
+
+vishal.kusuma@INHYDL4868 MINGW64 /d/VISHAL_LB (master)
+$ git commit -m "adding two files"
+[master c595d27] adding two files
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+ create mode 100644 register.txt
+
+vishal.kusuma@INHYDL4868 MINGW64 /d/VISHAL_LB (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+vishal.kusuma@INHYDL4868 MINGW64 /d/VISHAL_LB (master)
+$ git remote add origin "https://github.com/vishalkusuma/VISHAL_LB"
+
+vishal.kusuma@INHYDL4868 MINGW64 /d/VISHAL_LB (master)
+$ git push origin master
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (7/7), 558 bytes | 558.00 KiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/vishalkusuma/VISHAL_LB
+ * [new branch]      master -> master
+
+vishal.kusuma@INHYDL4868 MINGW64 /d/VISHAL_LB (master)
+$ git pull origin master
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 981 bytes | 122.00 KiB/s, done.
+From https://github.com/vishalkusuma/VISHAL_LB
+ * branch            master     -> FETCH_HEAD
+   c595d27..c1b6d2c  master     -> origin/master
+Updating c595d27..c1b6d2c
+Fast-forward
+ product.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 product.txt
+
+vishal.kusuma@INHYDL4868 MINGW64 /d/VISHAL_LB (master)
+$
