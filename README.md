@@ -1,1 +1,1 @@
-How to resolve Git Merge Confilct
+How to resolve Git Merge ConfilctNew change in base branch
